@@ -1,0 +1,213 @@
+@font-face {
+    font-family: Gilroy;
+    src: url("./fonts/Gilroy-Medium_0.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url("./fonts/Gilroy-Regular_0.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Delirium NCV;
+    src: url("./fonts/DeliriumNcv-Vm5e.ttf");
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Gilroy";
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    padding: 0 10vw;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid rgb(160, 160, 160);
+}
+
+#main>h4 {
+    font-size: 1.7vw;
+    margin-left: 10vw;
+    margin-top: 2vw;
+}
+
+#cards {
+    overflow: auto;
+    display: flex;
+    gap: 30px;
+    padding-left: 10vw;
+}
+
+#cards::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    max-width: 28vw;
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    padding: 2vw;
+    border-radius: 10px;
+    background-color: red;
+}
+
+.card h5 {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.stars {
+    margin-bottom: 20px;
+}
+
+.smphotos {
+    display: flex;
+    gap: 20px;
+}
+
+.photo {
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-color: yellow;
+}
+
+.image {
+    width: 11vw;
+    height: 12vw;
+    background-color: yellow;
+}
+
+#bna {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 10vw;
+}
+
+#browse {
+    width: 75%;
+}
+
+#browse>h4, #authors>h4 {
+    font-size: 1.7vw;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vw;
+}
+
+.book {
+    display: flex;
+    gap: 10px;
+}
+
+.bimg {
+    width: 100px;
+    height: 130px;
+    background-color: red;
+}
+
+#authors {
+    width: 20%;
+}
+
+.person {
+    margin-top: 1vw;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.person .img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+@media(max-width: 500px) {
+
+    #nav {
+        padding: 0 5vw;
+    }
+
+    #main>h4 {
+        margin-left: 5vw;
+        font-size: 7.7vw;
+    }
+
+    #cards {
+        padding: 0 5vw;
+    }
+
+    .card {
+        max-width: 90vw;
+    }
+
+    .text h1 {
+        font-size: 6vw;
+    }
+
+    .image {
+        width: 40vw;
+        height: 100%;
+    }
+
+    .photo {
+        width: 25px;
+        height: 25px;
+    }
+
+    .card h5 {
+        margin-bottom: 15px;
+    }
+
+    .stars {
+        margin-bottom: 10px;
+    }
+
+    #bna {
+        padding: 0 5vw;
+        flex-direction: column;
+    }
+
+    #browse {
+        width: 100%;
+    }
+
+    #browse>h4, #authors>h4 {
+        font-size: 7.7vw;
+    }
+
+    #authors {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .row {
+        gap: 40px;
+        overflow-x: auto;
+    }
+
+    .row::-webkit-scrollbar {
+        display: none;
+    }
+
+}
